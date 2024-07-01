@@ -7,7 +7,7 @@ of a 3D scene shared by the images, a process often referred
 to as “novel view synthesis.” In simple words, NeRF renders
 a new view of an object when given some input views. 
 
-This project is an implementation of NeRF using the lego data for NeRF from the original author’s link [here](https://drive.google.com/drive/folders/1lrDkQanWtTznf48FCaW5lX9ToRdNDF1a).
+This project is an implementation of NeRF using the Lego dataset for NeRF from the original author’s link [here](https://drive.google.com/drive/folders/1lrDkQanWtTznf48FCaW5lX9ToRdNDF1a).
 
 ### Approach
 
