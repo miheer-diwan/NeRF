@@ -27,7 +27,7 @@ Please refer to the [Wrapper.ipynb](Wrapper.ipynb) file for implementation detai
 </p>
 
 ## References
-1. [RBE 549: Computer Vision Homework 0](https://rbe549.github.io/spring2023/hw/hw0/)
+1. [RBE 549: Computer Vision Project 3](https://rbe549.github.io/fall2022/proj/p3/)
 2.  Ben Mildenhall, Pratul P. Srinivasan, Matthew Tancik, Jonathan T.
 Barron, Ravi Ramamoorthi, Ren Ng, ”NeRF: Representing Scenes as
 Neural Radiance Fields for View Synthesis.” [Link](https://arxiv.org/abs/2003.08934)
