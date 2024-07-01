@@ -1,33 +1,32 @@
-﻿# NeRF (Neural Radiance Field)
+﻿# NeRF 
 
-Neural Radiance Field is a generative model of sorts,
-conditioned on a collection of images and accurate poses (e.g.
-position and rotation), that allows you to generate new views
-of a 3D scene shared by the images, a process often referred
-to as “novel view synthesis.” In simple words, NeRF renders
-a new view of an object when given some input views. 
+NERF (Neural Radiance Fields) is a method that can synthesize novel 3D views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views.
 
-This project is an implementation of NeRF using the Lego dataset for NeRF from the original author’s link [here](https://drive.google.com/drive/folders/1lrDkQanWtTznf48FCaW5lX9ToRdNDF1a).
+This project is an implementation of NeRF using the [Lego Dataset](https://drive.google.com/drive/folders/1lrDkQanWtTznf48FCaW5lX9ToRdNDF1a)
 
-### Approach
+## Approach
 
-The basic NeRF approach represents a scene using a fully-connected (non-convolution) deep neural network, whose input
-is a single continuous 5D coordinate (spatial location (x,y,z)
-and viewing direction θ, ψ) and whose output is the volume
-density and view-dependent emitted radiance at that spatial
-location. 
+This approach represents a scene using a fully-connected (non-convolution) deep neural network, whose input is a single continuous 5D coordinate (spatial location (x,y,z
+) and viewing direction θ,ψ
+) and whose output is the volume density and view-dependent emitted radiance at that spatial location.
+
+The views are synthesized by querying 5D coordinates along camera rays and use classic volume rendering techniques to project the output colors and densities into an image. Because volume rendering is naturally differentiable, the only input required to optimize the representation is a set of images with known camera poses.
+
+
+
+
 <p align="center">
   <img src="Assets\procedure.jpg" alt="procedure" width="500"/>
 </p>
 
-The implementation code is given in Wrapper.ipynb.
+Please refer to the [Wrapper.ipynb](Wrapper.ipynb) file for implementation details.
 
-### Results
+## Results
 <p align="center">
   <img src="Results\NeRF.gif" alt="NeRF" width="350"/>
 </p>
 
-### References
+## References
 1. https://rbe549.github.io/spring2023/hw/hw0/
 2.  Ben Mildenhall, Pratul P. Srinivasan, Matthew Tancik, Jonathan T.
 Barron, Ravi Ramamoorthi, Ren Ng, ”NeRF: Representing Scenes as
