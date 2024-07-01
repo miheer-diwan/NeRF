@@ -27,10 +27,10 @@ Please refer to the [Wrapper.ipynb](Wrapper.ipynb) file for implementation detai
 </p>
 
 ## References
-1. https://rbe549.github.io/spring2023/hw/hw0/
+1. [RBE 549: Computer Vision Homework 0](https://rbe549.github.io/spring2023/hw/hw0/)
 2.  Ben Mildenhall, Pratul P. Srinivasan, Matthew Tancik, Jonathan T.
 Barron, Ravi Ramamoorthi, Ren Ng, ”NeRF: Representing Scenes as
-Neural Radiance Fields for View Synthesis.” [link](https://arxiv.org/abs/2003.08934)
+Neural Radiance Fields for View Synthesis.” [Link](https://arxiv.org/abs/2003.08934)
 3. https://towardsdatascience.com/its-nerf-from-nothing-build-a-vanilla-nerf-with-pytorch-7846e4c45666
 4. https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/nerf.ipynb
 5. https://www.matthewtancik.com/nerf
